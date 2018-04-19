@@ -1,0 +1,309 @@
+@import url("reset.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+input,
+button,
+div {
+  font-family: "Microsoft JhengHei", "Heiti TC", "sans-serif";
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+#app {
+  max-width: 1062px;
+  margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 76px;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 48px;
+  overflow: hidden;
+}
+header h1 {
+  display: block;
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+header nav ul {
+  overflow: hidden;
+}
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  font-size: 14px;
+  padding: 0 30px;
+  color: #626262;
+  line-height: 23px;
+}
+header nav ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+header nav ul li a:last-child {
+  padding-right: 0;
+}
+.banner {
+  width: 100%;
+  margin-bottom: 98px;
+}
+#app .photodiary {
+  width: 100%;
+  padding: 0 81px;
+}
+#app .photodiary h6 {
+  font-size: 14px;
+  color: #b4ad9e;
+}
+#app .photodiary h2 {
+  font-size: 30px;
+  color: #626262;
+  padding-top: 30px;
+}
+#app .photodiary p {
+  font-size: 14px;
+  color: #626262;
+  line-height: 28px;
+  font-weight: 400;
+  padding-top: 38px;
+}
+#app .pic {
+  max-width: 899px;
+  margin: 0 auto;
+}
+#app .pic img {
+  margin-bottom: 57px;
+}
+
+#app .text {
+  width: 100%;
+  padding: 0 81px;
+  margin-bottom: 117px;
+}
+#app .text h6 {
+  font-size: 14px;
+  color: #626262;
+  line-height: 28px;
+  padding: 0 21px 37px 21px;
+  font-style: oblique;
+}
+
+#app .text p {
+  font-weight: 400;
+  color: #626262;
+  line-height: 28px;
+  font-size: 14px;
+}
+#app .icon {
+  float: right;
+  padding: 0 81px;
+}
+#app .icon ul {
+  overflow: hidden;
+}
+#app .icon ul li {
+  float: left;
+  padding-left: 22px;
+}
+#app .icon a {
+  display: block;
+  font-size: 13px;
+  color: #b4ad9e;
+  line-height: 18px;
+}
+.photobox {
+  margin-bottom: 30px;
+}
+
+.photobox,
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.photobox .photo,
+footer article {
+  max-width: 899px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.photobox .photo h3 {
+  font-size: 14px;
+  color: #b4ad9e;
+  padding-top: 67px;
+  padding-bottom: 39px;
+}
+
+.photobox .photo ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.photobox .photo ul li {
+  float: left;
+  margin-right: 4.43%;
+  width: 30.36%;
+}
+.photobox .photo ul li:last-child {
+  margin-right: 0;
+}
+
+.photobox .photo ul li a h4 {
+  font-size: 20px;
+  color: #626262;
+  line-height: 61px;
+}
+
+footer article .footerText {
+  overflow: hidden;
+  float: left;
+}
+
+footer article .footerText a {
+  float: left;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #000000;
+  line-height: 97px;
+}
+
+footer article .follow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer article .follow ul {
+  overflow: hidden;
+}
+footer article .follow ul li {
+  float: left;
+}
+footer article .follow ul li a {
+  margin-left: 18px;
+  font-size: 14px;
+  display: block;
+  line-height: 14px;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  #app,
+  .photobox,
+  footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .photobox {
+    margin-bottom: 30px;
+  }
+  #app .photodiary,
+  #app .icon,
+  #app .text {
+    padding: 0;
+  }
+
+  .photobox .photo ul li a h4 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:414px){
+	#app header h1{
+		width: 119px;
+		float: none;
+		margin: 0 auto 20px auto;
+	}
+	#app header nav{
+		float: none;
+		width: 100%;
+	}
+	header nav ul li{
+		width: 25%;
+	}
+	header nav ul li a {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		font-size: 12px;
+    }
+    #app .photodiary h2 {
+      font-size: 20px;
+  }
+	  #app .icon{
+		  width: 100%;
+	  }
+	  #app .icon ul li{
+		  width: 16.6666%;
+		  padding: 0px;
+		  text-align: center;
+		  
+	  }
+	  #app .icon ul li a img{
+		  margin: 0 auto;
+	  }
+
+	  .photobox .photo ul li {
+		float: none;
+		width: 100%;
+	}
+	.photobox .photo{
+		text-align: center;
+	}
+	.photobox .photo ul li a img{
+		margin: 0 auto;
+	}
+	footer article .footerText {
+		float: none;
+	  }
+	footer article .footerText a{
+		display: block;
+		width: 50%;
+		margin-right: 0px;
+		text-align: center;
+		line-height: 50px;
+	}
+	  footer article .follow {
+		position: relative;
+		transform: translateY(0%);
+		margin-bottom: 20px;
+	  }
+	  footer article .follow ul{
+		  width: 157px;
+		  margin: 0 auto;
+	  }
+	  footer article .follow ul li{
+		margin: 0 5%;
+	}
+	  footer article .follow ul li a{
+		  margin: 0;
+	  }
+
+}
